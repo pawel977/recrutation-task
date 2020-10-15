@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "people"
+    }
+  },
+  "defaultProject": "people",
+  "cli": {
+    "analytics": false
+  }
 }
