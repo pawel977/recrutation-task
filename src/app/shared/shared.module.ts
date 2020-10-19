@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import * as cmp from './components/index';
 
@@ -8,9 +9,11 @@ import * as cmp from './components/index';
     ],
     exports: [
         cmp.NavComponent,
-        cmp.PageNotFoundComponent
+        cmp.PageNotFoundComponent,
+        CommonModule
     ],
     imports: [
+        CommonModule
     ]
 })
 export class SharedModule { }

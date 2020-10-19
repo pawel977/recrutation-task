@@ -1,0 +1,14 @@
+<div class="wrapper">
+  <img [src]="actualPictureOfSize(person?.imageUrl) | async" alt="person">
+  <div class="details">
+    <h4 class="block">
+      {{person?.block?.description}}
+    </h4>
+    {{person?.block?.title}}
+
+    <div>
+      <p><a href="mailto:{{person?.block?.link}}">{{person?.block?.link}}</a></p>
+      <p><a href="tel:{{person?.block?.text}}">{{person?.block?.text}}</a></p>
+    </div>
+  </div>
+</div>
