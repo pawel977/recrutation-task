@@ -6,4 +6,4 @@ import { routes } from './config/routes';
     imports: [RouterModule.forChild(routes)],
     exports: [RouterModule]
 })
-export class MainRoutingModule {}
+export class PeopleRoutingModule {}

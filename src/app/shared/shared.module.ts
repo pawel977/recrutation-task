@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import * as cmp from './components/index';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
     declarations: [
         cmp.NavComponent,
-        PageNotFoundComponent        
+        cmp.PageNotFoundComponent        
     ],
     exports: [
+        cmp.NavComponent,
+        cmp.PageNotFoundComponent
     ],
     imports: [
     ]

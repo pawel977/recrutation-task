@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { SharedModule } from '../shared/shared.module';
 import * as cmp from './components/index';
-import { MainRoutingModule } from './main-routing.module';
-
+import { PeopleRoutingModule } from './people-routing.module';
 @NgModule({
     declarations: [
-        cmp.MainComponent],
+        cmp.PeopleListComponent,
+        cmp.PeopleComponent
+        ],
     exports: [
     ],
     imports: [
         SharedModule,
-        MainRoutingModule
+        PeopleRoutingModule
     ]
 })
-export class MainModule { }
+export class PeopleModule { }
