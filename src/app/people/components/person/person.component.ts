@@ -15,7 +15,6 @@ export class PersonComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   getScreenSize(event?) {
     this.scrWidth = window.innerWidth;
-    console.log(this.scrWidth);
   }
 
   constructor() {
@@ -23,11 +22,9 @@ export class PersonComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log({ person: this.person })
   }
 
   actualPictureOfSize(links) {
-    console.log({links})
     if (this.scrWidth <= widthScreen.w200) { return of(links.w200) } 
     else if (this.scrWidth <= widthScreen.w400) {return of(links.w400)}
     else if (this.scrWidth <= widthScreen.w1080) { return of(links.w1080) }
